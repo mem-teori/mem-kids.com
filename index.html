@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M.E.M. Kids</title>
+<style>
+:root{--night:#14123a;--ink:#14123a;--born:#7b4dff;--born2:#b14dff;--unge:#00b894;--unge2:#00d2d3;--sol:#ffc93c;--pink:#ff5d8f}
+*{box-sizing:border-box}
+html,body{margin:0;background:#fff8e7;color:var(--ink);font-family:"Nunito","Trebuchet MS",system-ui,sans-serif}
+.top{background:radial-gradient(ellipse at 50% 60%,#2e2a7a 0%,var(--night) 70%);color:#fff;padding-bottom:30px;border-radius:0 0 50% 50%/0 0 60px 60px;position:relative;overflow:hidden}
+header{display:flex;justify-content:space-between;align-items:center;padding:22px 6%;position:relative;z-index:2}
+.logo{font-family:Georgia,serif;font-size:26px;text-decoration:none;color:#fff}
+.logo em{color:var(--sol)}
+.hero{position:relative;text-align:center;padding:10px 6% 0;z-index:2}
+h1{font-family:Georgia,serif;font-weight:700;font-size:clamp(42px,7vw,88px);line-height:1;margin:10px 0 14px;letter-spacing:-1px}
+h1 span{color:#c9b6ff;text-shadow:0 0 30px #7b4dffaa} h1 b{color:#5ff5d0;text-shadow:0 0 30px #00b894aa}
+.lead{font-size:clamp(19px,2.2vw,24px);max-width:620px;margin:0 auto;color:#ffe9a8;font-weight:700}
+.stage{position:relative;height:360px;margin-top:6px}
+canvas{position:absolute;inset:0;width:100%;height:100%;touch-action:none;cursor:grab}
+canvas:active{cursor:grabbing}
+.hint{position:absolute;left:50%;bottom:16px;transform:translateX(-50%);font-size:18px;font-weight:800;background:var(--sol);color:var(--night);padding:10px 22px;border-radius:99px;box-shadow:0 0 0 6px #ffc93c40;white-space:nowrap;pointer-events:none;transition:opacity .4s;animation:pulse 1.6s infinite}
+@keyframes pulse{50%{box-shadow:0 0 0 14px #ffc93c00;transform:translateX(-50%) scale(1.05)}}
+.doors{display:grid;grid-template-columns:1fr 1fr;gap:30px;padding:50px 6% 60px;max-width:1200px;margin:0 auto}
+.door{position:relative;display:block;text-decoration:none;color:#fff;padding:42px 38px 38px;min-height:320px;overflow:hidden;transition:transform .25s,box-shadow .25s}
+.door:hover,.door:focus-visible{transform:translateY(-8px) rotate(-1deg) scale(1.02)}
+.door.born{background:linear-gradient(135deg,var(--born),var(--born2));border-radius:44px 44px 130px 44px;box-shadow:0 16px 0 #4a24c4}
+.door.unge{background:linear-gradient(135deg,var(--unge),var(--unge2));border-radius:44px 44px 44px 130px;box-shadow:0 16px 0 #00806a}
+.door.unge:hover{transform:translateY(-8px) rotate(1deg) scale(1.02)}
+.age{display:inline-block;font-weight:800;font-size:14px;letter-spacing:1px;padding:7px 15px;border-radius:99px;background:var(--sol);color:var(--night)}
+.door h2{font-family:Georgia,serif;font-weight:700;font-size:clamp(54px,7vw,88px);margin:14px 0 8px;text-shadow:0 4px 0 #0002}
+.door p{font-size:21px;max-width:340px;margin:0;line-height:1.4;font-weight:600}
+.go{display:inline-block;margin-top:24px;font-weight:800;font-size:19px;background:#fff;padding:12px 24px;border-radius:99px}
+.born .go{color:var(--born)} .unge .go{color:#00806a}
+.door svg{position:absolute;right:-24px;bottom:-24px;width:210px;height:210px;transition:transform .4s}
+.door:hover svg{transform:rotate(-12deg) scale(1.1)}
+footer{text-align:center;padding:26px 6% 34px;font-size:15px;font-weight:600}
+@media(max-width:700px){.doors{grid-template-columns:1fr;padding-top:36px}.stage{height:270px}.door{min-height:250px}.door svg{width:150px;height:150px}}
+@media(prefers-reduced-motion:reduce){.door,.door svg{transition:none}.hint{animation:none}}
+</style>
+</head>
+<body>
+<div class="top"><header><a class="logo" href="#">M.E.M. <em>Kids</em></a></header>
+
+<section class="hero">
+  <h1>Noget bevæger sig<br><span>mellem</span> <b>os</b></h1>
+  <p class="lead">Træk i tråden og se, hvad der sker.</p>
+  <div class="stage">
+    <canvas id="c" aria-label="En tråd mellem to venner, som du kan trække i"></canvas>
+    <div class="hint" id="hint">👆 Tag fat i tråden</div>
+  </div>
+</section>
+</div>
+
+<nav class="doors" aria-label="Vælg dit univers">
+  <a class="door born" href="#born">
+    <span class="age">0–12 ÅR · GERNE MED EN VOKSEN</span>
+    <h2>Børn</h2>
+    <p>Historier at træde ind i. Noget at mærke. En verden at undersøge.</p>
+    <span class="go">Gå ind →</span>
+    <svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="40" fill="#fff" opacity=".2"/><circle cx="50" cy="50" r="24" fill="#ffc93c"/><circle cx="43" cy="46" r="3" fill="#14123a"/><circle cx="57" cy="46" r="3" fill="#14123a"/><path d="M42 56q8 7 16 0" stroke="#14123a" stroke-width="3" fill="none" stroke-linecap="round"/></svg>
+  </a>
+  <a class="door unge" href="#unge">
+    <span class="age">13–20 ÅR</span>
+    <h2>Unge</h2>
+    <p>Din stemme, dine relationer og dine rettigheder. Plads til at finde din egen vej.</p>
+    <span class="go">Gå ind →</span>
+    <svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="40" fill="#fff" opacity=".2"/><circle cx="50" cy="50" r="24" fill="#ff5d8f"/><circle cx="43" cy="47" r="3" fill="#fff"/><circle cx="57" cy="47" r="3" fill="#fff"/><path d="M43 57q7 4 14 0" stroke="#fff" stroke-width="3" stroke-linecap="round"/></svg>
+  </a>
+</nav>
+
+<footer>M.E.M. Kids · Maria Edlenborg Mortensen</footer>
+
+<script>
+(()=>{
+const cv=document.getElementById('c'),x=cv.getContext('2d'),hint=document.getElementById('hint');
+let W,H,dpr,pts=[],N=34,grab=-1,mx=0,my=0,used=false,t=0,sparks=[];
+function size(){dpr=devicePixelRatio||1;W=cv.clientWidth;H=cv.clientHeight;cv.width=W*dpr;cv.height=H*dpr;x.setTransform(dpr,0,0,dpr,0,0);init()}
+function ends(){return[{x:W*.14,y:H*.5},{x:W*.86,y:H*.5}]}
+function init(){const[a,b]=ends();pts=[];for(let i=0;i<N;i++){const k=i/(N-1);pts.push({x:a.x+(b.x-a.x)*k,y:a.y+Math.sin(k*Math.PI)*30,px:0,py:0});pts[i].px=pts[i].x;pts[i].py=pts[i].y}}
+function seg(){const[a,b]=ends();return Math.hypot(b.x-a.x,b.y-a.y)/(N-1)*1.12}
+function step(){
+ const[a,b]=ends(),L=seg();t+=.016;
+ for(let i=1;i<N-1;i++){const p=pts[i],vx=(p.x-p.px)*.985,vy=(p.y-p.py)*.985;p.px=p.x;p.py=p.y;p.x+=vx;p.y+=vy+.25+(grab<0&&!used?Math.sin(t*2+i*.3)*.04:0)}
+ if(grab>0){pts[grab].x=mx;pts[grab].y=my}
+ for(let k=0;k<12;k++){pts[0].x=a.x;pts[0].y=a.y+Math.sin(t*1.5)*4;pts[N-1].x=b.x;pts[N-1].y=b.y+Math.cos(t*1.5)*4;
+  for(let i=0;i<N-1;i++){const p=pts[i],q=pts[i+1],dx=q.x-p.x,dy=q.y-p.y,d=Math.hypot(dx,dy)||1,f=(d-L)/d*.5;
+   if(i>0&&i!==grab){p.x+=dx*f;p.y+=dy*f} if(i+1<N-1&&i+1!==grab){q.x-=dx*f;q.y-=dy*f}}}
+ // sparks travel along rope when pulled
+ const tension=pts.reduce((s,p,i)=>i?s+Math.hypot(p.x-pts[i-1].x,p.y-pts[i-1].y):0,0)/((N-1)*L);
+ if(grab>0&&Math.random()<.45+tension*.2)sparks.push({u:Math.random()<.5?0:1,dir:0,v:.012+Math.random()*.01,c:Math.random()<.5?'#9b7bff':'#00e0b0'});
+ sparks.forEach(s=>{if(!s.dir)s.dir=s.u?-1:1;s.u+=s.v*s.dir});sparks=sparks.filter(s=>s.u>=0&&s.u<=1);
+ draw(tension)}
+function at(u){const f=u*(N-1),i=Math.min(N-2,Math.floor(f)),r=f-i;return{x:pts[i].x+(pts[i+1].x-pts[i].x)*r,y:pts[i].y+(pts[i+1].y-pts[i].y)*r}}
+function face(p,col,s,mood){x.fillStyle=col+'40';x.beginPath();x.arc(p.x,p.y,s*1.7,0,7);x.fill();x.fillStyle=col;x.beginPath();x.arc(p.x,p.y,s,0,7);x.fill();
+ x.fillStyle='#fff';x.beginPath();x.arc(p.x-s*.32,p.y-s*.15,s*.13,0,7);x.arc(p.x+s*.32,p.y-s*.15,s*.13,0,7);x.fill();
+ x.strokeStyle='#fff';x.lineWidth=s*.12;x.lineCap='round';x.beginPath();x.arc(p.x,p.y+s*.1,s*.38,.2*Math.PI+(1-mood)*.3,.8*Math.PI-(1-mood)*.3);x.stroke()}
+const stars=Array.from({length:70},()=>({x:Math.random(),y:Math.random(),r:Math.random()*1.8+.4,p:Math.random()*6}));
+function draw(ten){x.clearRect(0,0,W,H);stars.forEach(st=>{x.fillStyle='rgba(255,255,255,'+(.35+.35*Math.sin(t*2+st.p))+')';x.beginPath();x.arc(st.x*W,st.y*H,st.r,0,7);x.fill()});
+ x.shadowColor='#ffc93c';x.shadowBlur=grab>0?30:16;
+ const g=x.createLinearGradient(pts[0].x,0,pts[N-1].x,0);g.addColorStop(0,'#9b7bff');g.addColorStop(.5,'#ffc93c');g.addColorStop(1,'#00e0b0');
+ x.strokeStyle=g;x.lineWidth=9;x.lineCap='round';x.lineJoin='round';x.beginPath();x.moveTo(pts[0].x,pts[0].y);
+ for(let i=1;i<N-1;i++){const mx2=(pts[i].x+pts[i+1].x)/2,my2=(pts[i].y+pts[i+1].y)/2;x.quadraticCurveTo(pts[i].x,pts[i].y,mx2,my2)}x.lineTo(pts[N-1].x,pts[N-1].y);x.stroke();
+ x.shadowBlur=0;sparks.forEach(s=>{const p=at(s.u);x.shadowColor=s.c;x.shadowBlur=20;x.fillStyle=s.c;x.beginPath();x.arc(p.x,p.y,6,0,7);x.fill();x.fillStyle='#ffc93c66';x.beginPath();x.arc(p.x,p.y,11,0,7);x.fill()});
+ x.shadowBlur=0;const s=Math.min(W,H)*.1,mood=grab>0?1:.55;face(pts[0],'#9b7bff',s,mood);face(pts[N-1],'#00e0b0',s,mood)}
+function pos(e){const r=cv.getBoundingClientRect();return{x:e.clientX-r.left,y:e.clientY-r.top}}
+cv.addEventListener('pointerdown',e=>{const p=pos(e);let best=-1,bd=60;for(let i=2;i<N-2;i++){const d=Math.hypot(pts[i].x-p.x,pts[i].y-p.y);if(d<bd){bd=d;best=i}}
+ if(best>0){grab=best;mx=p.x;my=p.y;cv.setPointerCapture(e.pointerId);if(!used){used=true;hint.style.opacity=0}}});
+cv.addEventListener('pointermove',e=>{if(grab>0){const p=pos(e);mx=p.x;my=Math.max(10,Math.min(H-10,p.y))}});
+addEventListener('pointerup',()=>grab=-1);
+addEventListener('resize',size);size();
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+(function loop(){step();if(!reduce||grab>0)requestAnimationFrame(loop);else setTimeout(()=>requestAnimationFrame(loop),200)})();
+})();
+</script>
+</body>
+</html>
