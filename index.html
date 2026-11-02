@@ -37,6 +37,28 @@ canvas:active{cursor:grabbing}
 footer{text-align:center;padding:26px 6% 34px;font-size:15px;font-weight:600}
 @media(max-width:700px){.doors{grid-template-columns:1fr;padding-top:36px}.stage{height:270px}.door{min-height:250px}.door svg{width:150px;height:150px}}
 @media(prefers-reduced-motion:reduce){.door,.door svg{transition:none}.hint{animation:none}}
+
+/* Unge: skarpere former og et selvstændigt, roligere udtryk. */
+.door.unge{background:linear-gradient(145deg,#172633,#101622);border-radius:12px 12px 44px 12px;box-shadow:0 16px 0 #0b101a;border-top:3px solid #63edc6}
+.door.unge:hover,.door.unge:focus-visible{transform:translateY(-6px)}
+.unge .age{background:#203e42;color:#a5ffe2;border-radius:4px}
+.door.unge h2{font-family:system-ui,sans-serif;font-weight:800;letter-spacing:-3px;text-shadow:none}
+.door.unge p{color:#d9e5ec;position:relative;z-index:1;font-size:20px}
+.unge .go{color:#a5ffe2;background:transparent;border:1px solid #63edc6;border-radius:4px;position:relative;z-index:1}
+.unge .signal{position:absolute;right:20px;bottom:20px;width:100px;height:100px;border:1px solid #63edc633;transform:rotate(35deg);pointer-events:none}
+.unge .signal:before,.unge .signal:after{content:'';position:absolute;inset:18px;border:1px solid #63edc64d}
+.unge .signal:after{inset:36px;background:#63edc666}
+.adults-wrap{max-width:1200px;margin:0 auto;padding:0 6% 35px}
+.adult-door{display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center;text-decoration:none;color:var(--night);padding:30px 34px;background:#eee8db;border-radius:18px;border:1px solid #d8d0c0;transition:background .2s}
+.adult-door:hover{background:#e7dfce}.adult-door:focus-visible{outline:3px solid #69519e;outline-offset:5px}
+.adult-door h2{font:700 clamp(22px,3vw,29px)/1.2 Georgia,serif;margin:0 0 12px}
+.adult-door p{margin:0;max-width:650px;font-size:17px;line-height:1.5}
+.adult-door .adult-go{font-weight:700;font-size:16px;white-space:nowrap}
+.adult-content{background:#fffdf6;border-radius:18px;padding:28px 34px;margin-top:16px;border:1px solid #ddd5c7;line-height:1.65}
+.adult-content[hidden]{display:none}.adult-content h2{font:700 29px/1.2 Georgia,serif;margin:0 0 20px}.adult-content h3{font-size:19px;margin:24px 0 8px}.adult-content p{margin:0 0 12px;max-width:760px}.adult-content .ground{border-top:1px solid #ddd5c7;padding-top:20px;margin-top:25px;font-size:15px}
+@media(max-width:700px){.adult-door{grid-template-columns:1fr;padding:25px}.adult-content{padding:24px}.door.unge h2{font-size:64px}.age{font-size:12px;letter-spacing:.5px;max-width:100%}.door{padding:30px 26px}.door p{font-size:19px}.hint{font-size:15px;padding:10px 16px}}
+@media(prefers-reduced-motion:reduce){.adult-door{transition:none}.door:hover,.door:focus-visible,.door.unge:hover{transform:none}}
+
 </style>
 </head>
 <body>
@@ -65,14 +87,37 @@ footer{text-align:center;padding:26px 6% 34px;font-size:15px;font-weight:600}
     <h2>Unge</h2>
     <p>Din stemme, dine relationer og dine rettigheder. Plads til at finde din egen vej.</p>
     <span class="go">Gå ind →</span>
-    <svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="40" fill="#fff" opacity=".2"/><circle cx="50" cy="50" r="24" fill="#ff5d8f"/><circle cx="43" cy="47" r="3" fill="#fff"/><circle cx="57" cy="47" r="3" fill="#fff"/><path d="M43 57q7 4 14 0" stroke="#fff" stroke-width="3" stroke-linecap="round"/></svg>
+    <span class="signal" aria-hidden="true"></span>
   </a>
 </nav>
+
+
+<section class="adults-wrap" aria-label="Indgang for voksne og fagpersoner">
+  <a class="adult-door" href="#voksne" aria-expanded="false" aria-controls="voksne">
+    <div><h2>Til voksne og fagpersoner</h2><p>Hvordan skaber vi betingelser for læring, trivsel og sammenhæng i børn og unges liv?</p></div>
+    <span class="adult-go">Se vores tilgang →</span>
+  </a>
+  <div class="adult-content" id="voksne" hidden>
+    <h2>Et relationelt blik på børn og unge</h2>
+    <p>Børn og unge lever og udvikler sig gennem relationer, erfaringer og de rammer, de møder. Derfor undersøger vi sammenhængen mellem barnet, fællesskabet og de betingelser, voksne og institutioner skaber.</p>
+    <h3>Læring: oplevelse før forklaring</h3>
+    <p>Vi tager udgangspunkt i nysgerrighed, konkrete erfaringer og behovet for at forstå. Barnet får mulighed for at undersøge og prøve sig frem. Ord, tal og modeller forbindes med det oplevede.</p>
+    <h3>Ansvar: adgang til at deltage</h3>
+    <p>Når en elev ikke deltager, undersøger vi også opgavens mening, krav, tempo, støtte og pladsen i fællesskabet. De voksne har ansvar for at tilpasse de betingelser, de har indflydelse på, og følge op på, om ændringerne hjælper.</p>
+    <h3>Trivsel: det, der sker mellem os</h3>
+    <p>Barnets egen oplevelse skal have betydning. Vi ser på tryghed, relationer og muligheder for at høre til over tid. Støtten skal også kunne ændre de forhold, der gør hverdagen vanskelig.</p>
+    <h3>Børn i offentlige systemer: sammenhæng gennem skift</h3>
+    <p>Ved skoleskift, anbringelser og skift af sagsbehandler skal vigtige erfaringer, aftaler og relationer indgå i overgangen. Barnet eller den unge skal kunne forstå, hvad der sker, blive hørt og få forklaret, hvordan deres perspektiv indgår i beslutningerne.</p>
+    <p class="ground">Arbejdet udspringer af Mirakel Teori og M.E.M. Teori. På læringsområdet arbejder vi med Meaning, Experience, Model. Herfra udvikles fortællinger, læringsverdener, forløb og støtteværktøjer. Deres udviklings- og afprøvningsstatus skal fremgå af de enkelte tilbud.</p>
+  </div>
+</section>
 
 <footer>M.E.M. Kids · Maria Edlenborg Mortensen</footer>
 
 <script>
 (()=>{
+const adultLink=document.querySelector('.adult-door'),adultPanel=document.getElementById('voksne');
+adultLink.addEventListener('click',e=>{e.preventDefault();const open=adultPanel.hidden;adultPanel.hidden=!open;adultLink.setAttribute('aria-expanded',String(open));adultLink.querySelector('.adult-go').textContent=open?'Luk introduktionen ↑':'Se vores tilgang →'});
 const cv=document.getElementById('c'),x=cv.getContext('2d'),hint=document.getElementById('hint');
 let W,H,dpr,pts=[],N=34,grab=-1,mx=0,my=0,used=false,t=0,sparks=[];
 function size(){dpr=devicePixelRatio||1;W=cv.clientWidth;H=cv.clientHeight;cv.width=W*dpr;cv.height=H*dpr;x.setTransform(dpr,0,0,dpr,0,0);init()}
