@@ -75,14 +75,14 @@ footer{text-align:center;padding:26px 6% 34px;font-size:15px;font-weight:600}
 </div>
 
 <nav class="doors" aria-label="Vælg dit univers">
-  <a class="door born" href="#born">
+  <a class="door born" href="boern.html">
     <span class="age">0–12 ÅR · GERNE MED EN VOKSEN</span>
     <h2>Børn</h2>
     <p>Historier at træde ind i. Noget at mærke. En verden at undersøge.</p>
     <span class="go">Gå ind →</span>
     <svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="40" fill="#fff" opacity=".2"/><circle cx="50" cy="50" r="24" fill="#ffc93c"/><circle cx="43" cy="46" r="3" fill="#14123a"/><circle cx="57" cy="46" r="3" fill="#14123a"/><path d="M42 56q8 7 16 0" stroke="#14123a" stroke-width="3" fill="none" stroke-linecap="round"/></svg>
   </a>
-  <a class="door unge" href="#unge">
+  <a class="door unge" href="unge.html">
     <span class="age">13–20 ÅR</span>
     <h2>Unge</h2>
     <p>Din stemme, dine relationer og dine rettigheder. Plads til at finde din egen vej.</p>
@@ -118,6 +118,7 @@ footer{text-align:center;padding:26px 6% 34px;font-size:15px;font-weight:600}
 (()=>{
 const adultLink=document.querySelector('.adult-door'),adultPanel=document.getElementById('voksne');
 adultLink.addEventListener('click',e=>{e.preventDefault();const open=adultPanel.hidden;adultPanel.hidden=!open;adultLink.setAttribute('aria-expanded',String(open));adultLink.querySelector('.adult-go').textContent=open?'Luk introduktionen ↑':'Se vores tilgang →'});
+if(location.hash==='#voksne'){adultPanel.hidden=false;adultLink.setAttribute('aria-expanded','true');adultLink.querySelector('.adult-go').textContent='Luk introduktionen ↑';}
 const cv=document.getElementById('c'),x=cv.getContext('2d'),hint=document.getElementById('hint');
 let W,H,dpr,pts=[],N=34,grab=-1,mx=0,my=0,used=false,t=0,sparks=[];
 function size(){dpr=devicePixelRatio||1;W=cv.clientWidth;H=cv.clientHeight;cv.width=W*dpr;cv.height=H*dpr;x.setTransform(dpr,0,0,dpr,0,0);init()}

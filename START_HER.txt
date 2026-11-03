@@ -1,0 +1,50 @@
+M.E.M. KIDS – BØRNE- OG UNGERUM v0.2
+
+SE DET PÅ DIN COMPUTER
+1. Pak hele zipfilen ud.
+2. Dobbeltklik på index.html.
+3. Vælg Børn eller Unge.
+Alle otte webfiler skal blive i samme mappe.
+
+LÆG DET PÅ MEM-KIDS.COM
+Upload disse otte filer til samme placering som den nuværende forside:
+index.html
+boern.html
+unge.html
+rum.css
+boern.js
+unge.js
+unge-flow.css
+unge-flow.js
+Tag en kopi af den nuværende index.html først.
+Forsiden er hentet fra mem-kids.com den 3. november 2026.
+Den bevarer det eksisterende udtryk og voksenindgangen.
+Kun børne-/ungelinks og åbning ved #voksne er ændret.
+Hvis forsiden er ændret siden, skal kun de to links flettes ind:
+Børn: boern.html
+Unge: unge.html
+
+INDHOLD
+Børn: fire små lokale oplevelser – symbolport, farveform,
+fortælletråd og valg om venskab.
+Unge: grænser, beskedkladde, digitalt liv og kontinuitet.
+Historien og situationerne er eksempler skabt til denne prototype.
+Ingen login, analyseværktøjer, serverkald eller lagring af indtastet tekst.
+Beskedkladden er en fast tekstskabelon, ikke AI.
+Eksterne links åbner andre hjemmesider med deres egne vilkår.
+
+STATUS OG KONTROL
+Første fungerende udkast. Ikke en skolepilot eller støttetjeneste.
+Ingen påstand om dokumenteret pædagogisk eller terapeutisk effekt.
+Kontrolleret: JavaScript-syntaks, portens valgregler og nulstilling,
+fortælletråd, grænsevalg, tekstkladde/rydning og lokale links.
+Browser- og visuel kontrol er ikke gennemført i dette miljø.
+Den eksisterende forsides trådanimation er bevaret uden ændringer.
+Pakken er ikke uploadet til domænet af assistenten.
+
+ÆNDRING v0.2
+Kun ungerummet har fået nyt udtryk: blødere asymmetriske flader,
+lys og dybde, situationsbaserede indgange og en tråd til mus,
+berøring eller tastatur via skyder. Øvrigt indhold er bevaret.
+Børnerummet og forsiden er uændrede fra v0.1.
+Ekstra kontrol: trådens skyder skifter situation i begge ender.
