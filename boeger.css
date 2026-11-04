@@ -1,0 +1,23 @@
+.book-section{scroll-margin-top:24px}
+.book-layout{display:grid;grid-template-columns:220px minmax(0,1fr);gap:40px;align-items:start}
+.book-cover,.book-teaser-cover{display:block}
+.book-cover img,.book-teaser-cover img{display:block;width:100%;height:auto;border-radius:5px;box-shadow:0 12px 28px #39233824}
+.book-copy h2{margin-top:12px}
+.book-format{font-size:14px;color:#584b70}
+.book-actions{display:flex;flex-wrap:wrap;gap:12px;margin:24px 0}
+.book-primary,.book-secondary{display:inline-flex;align-items:center;justify-content:center;min-height:48px;border-radius:28px;padding:11px 21px;text-decoration:none;font-size:16px;font-weight:700;line-height:1.4;border:1px solid #7041c4}
+.book-primary{background:#7041c4;color:#fff}
+.book-secondary{background:transparent;color:#533196}
+.book-primary:hover{background:#573095}.book-secondary:hover{background:#eee4ff}
+.book-guide{font-size:15px;margin:0 0 20px}.book-guide a{font-weight:700;text-underline-offset:3px}
+.book-guide span{font-size:13px;color:#584b70}
+.book-permission{font-size:13px;line-height:1.6;color:#584b70;max-width:620px}
+.book-teaser-wrap{max-width:1200px;margin:0 auto;padding:0 6% 30px}
+.book-teaser{display:grid;grid-template-columns:112px minmax(0,1fr);gap:28px;align-items:center;padding:28px 34px;background:#f4eadf;border:1px solid #e4d7c9;border-radius:24px 40px 24px 32px}
+.book-kicker{font-size:12px;font-weight:700;letter-spacing:1px;color:#664069;margin:0 0 10px}
+.book-teaser h2{font:700 clamp(24px,3vw,32px)/1.2 Georgia,serif;margin:0 0 12px}
+.book-teaser-copy>p:not(.book-kicker){font-size:17px;line-height:1.5;margin:0 0 14px;max-width:620px}
+.book-teaser-link{display:inline-block;font-size:16px;font-weight:700;color:#533196;padding:8px 0;text-underline-offset:4px}
+.book-section a:focus-visible,.book-teaser-wrap a:focus-visible{outline:3px solid #8250d8;outline-offset:5px}
+@media(max-width:700px){.book-layout{grid-template-columns:1fr;gap:24px}.book-cover{width:180px;max-width:65%}.book-teaser{padding:24px;gap:20px;grid-template-columns:90px minmax(0,1fr)}.book-teaser h2{font-size:25px}.book-teaser-copy>p:not(.book-kicker){font-size:16px}}
+@media(max-width:400px){.book-teaser{grid-template-columns:1fr}.book-teaser-cover{width:100px}}

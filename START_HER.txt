@@ -1,50 +1,26 @@
-M.E.M. KIDS – BØRNE- OG UNGERUM v0.2
+M.E.M. KIDS – BOGEN ER MED I PAKKEN
 
-SE DET PÅ DIN COMPUTER
-1. Pak hele zipfilen ud.
-2. Dobbeltklik på index.html.
-3. Vælg Børn eller Unge.
-Alle otte webfiler skal blive i samme mappe.
+1. Pak zipfilen ud på din computer.
+2. Åbn mappen mem-kids.com-main.
+3. Åbn dit eksisterende GitHub-repository for mem-kids.com.
+4. Vælg Add file → Upload files.
+5. Træk filerne OG mapperne inde i mem-kids.com-main ind i uploadfeltet.
+   Upload indholdet til repositoryets rod, hvor index.html allerede ligger.
+   Upload ikke selve zipfilen eller mem-kids.com-main som en ekstra undermappe.
+6. Gem med Commit changes, og vent på at GitHub Pages er færdig.
 
-LÆG DET PÅ MEM-KIDS.COM
-Upload disse otte filer til samme placering som den nuværende forside:
-index.html
-boern.html
-unge.html
-rum.css
-boern.js
-unge.js
-unge-flow.css
-unge-flow.js
-Tag en kopi af den nuværende index.html først.
-Forsiden er hentet fra mem-kids.com den 3. november 2026.
-Den bevarer det eksisterende udtryk og voksenindgangen.
-Kun børne-/ungelinks og åbning ved #voksne er ændret.
-Hvis forsiden er ændret siden, skal kun de to links flettes ind:
-Børn: boern.html
-Unge: unge.html
+Tag gerne en kopi af den nuværende hjemmeside først.
+Behold mappernes navne og placering. CNAME er bevaret som mem-kids.com.
+Hvis du har ændret hjemmesiden efter den vedhæftede pakke, skal de ændringer
+bevares, når du lægger denne opdatering ind.
 
-INDHOLD
-Børn: fire små lokale oplevelser – symbolport, farveform,
-fortælletråd og valg om venskab.
-Unge: grænser, beskedkladde, digitalt liv og kontinuitet.
-Historien og situationerne er eksempler skabt til denne prototype.
-Ingen login, analyseværktøjer, serverkald eller lagring af indtastet tekst.
-Beskedkladden er en fast tekstskabelon, ikke AI.
-Eksterne links åbner andre hjemmesider med deres egne vilkår.
+NYT
+- Forside: en lille invitation til at møde Alma og Bankeren.
+- Børnerum: bog under 9–12 år med Læs bogen og Hent PDF.
+- Læsevejledning til voksne ved bogen og i voksenindgangen.
+- Gratis deling til ikke-kommerciel brug er forklaret på siden og i filerne.
+- PDF'er i boeger/ og et let omslag i assets/.
+- Bog og omslag har særskilte vilkår; se boeger/BRUGSVILKAAR.txt.
 
-STATUS OG KONTROL
-Første fungerende udkast. Ikke en skolepilot eller støttetjeneste.
-Ingen påstand om dokumenteret pædagogisk eller terapeutisk effekt.
-Kontrolleret: JavaScript-syntaks, portens valgregler og nulstilling,
-fortælletråd, grænsevalg, tekstkladde/rydning og lokale links.
-Browser- og visuel kontrol er ikke gennemført i dette miljø.
-Den eksisterende forsides trådanimation er bevaret uden ændringer.
-Pakken er ikke uploadet til domænet af assistenten.
-
-ÆNDRING v0.2
-Kun ungerummet har fået nyt udtryk: blødere asymmetriske flader,
-lys og dybde, situationsbaserede indgange og en tråd til mus,
-berøring eller tastatur via skyder. Øvrigt indhold er bevaret.
-Børnerummet og forsiden er uændrede fra v0.1.
-Ekstra kontrol: trådens skyder skifter situation i begge ender.
+Unge-rummets filer og de eksisterende øvelser er bevaret.
+Pakken er gjort klar til upload; den er ikke offentliggjort af assistenten.
