@@ -1,19 +1,31 @@
-M.E.M. KIDS – SAMLET OPDATERING
+M.E.M. KIDS – STATISTIK
 
-1. Pak zipfilen ud. Åbn mappen mem-kids-samlet.
-2. Åbn index.html for at se siden lokalt. PDF'er og oplevelser følger med.
-3. Tag en kopi af dit nuværende GitHub-repository.
-4. Upload indholdet af mem-kids-samlet til repositoryets rod, hvor index.html ligger.
-   Upload både filer og undermapper. Ikke zipfilen eller en ekstra rodmappe.
-5. Gem med Commit changes. Vent på GitHub Pages.
+Bekræft først din mail via beskeden fra GoatCounter.
 
-Nyt: voksne.html, bankeren.html, laering.html, lokal Science Sandbox,
-ungerummets tempoeksperiment, fælles navigation og opdaterede præsentationer.
-Bogens PDF'er og LinkedIn-linkkort er bevaret. CNAME er mem-kids.com.
+1. Pak denne ZIP ud.
+2. Upload disse FIRE HTML-filer til roden af dit eksisterende GitHub-repository:
+   index.html
+   boern.html
+   voksne.html
+   statistik-og-privatliv.html
+3. Gem med Commit changes og vent på at GitHub Pages er færdig.
+4. Åbn mem-kids.com/boern.html og klik Hent PDF én gang.
+5. Se resultatet på https://mem-kids.goatcounter.com/ efter lidt tid.
 
-Dette er en samlet pakke baseret på den seneste version i denne samtale.
-Eventuelle nyere ændringer, du selv har lavet, skal flettes med før upload.
+Der kommer tre navngivne kliktyper:
+- Bog: Læs bogen (også klik på omslaget i børnerummet)
+- Bog: Hent PDF
+- Læsevejledning: Hent PDF (alle tre placeringer)
 
-Bankeren-præsentationen beskriver udviklingssporet. Farveformen og
-tempoeksperimentet er enkle lokale oplevelser, ikke Maxis beslutningskerne.
-AI-sporene er præsentationer og samtaleøvelser, ikke aktive støttetjenester.
+Kun forsiden, børnerummet og voksensiden måler besøg.
+Hvert registreret klik kan tælles, også gentagne klik.
+Et klik er ikke bevis for fuldført download eller læsning.
+Direkte PDF-besøg tælles ikke. Ingen tal kan hentes bagud i tid.
+Statistikscriptet læser ingen formularfelter eller andre aktivitetsvalg.
+Forespørgselsparametre og henvisningsadresse sendes ikke af integrationen.
+
+Siderne er hentet fra den offentlige hjemmeside før ændringen.
+Bogen, dens links og eksisterende funktioner er bevaret.
+
+Hvis der ikke kommer data: kontrollér at mailen er bekræftet, at de nye
+filer er udgivet, og at en annonceblokering ikke stopper GoatCounter.
