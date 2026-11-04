@@ -1,20 +1,19 @@
-M.E.M. KIDS – LINKKORT TIL BOGEN
+M.E.M. KIDS – SAMLET OPDATERING
 
-Upload kun disse nye/ændrede filer til dit eksisterende GitHub-repository:
-- boern.html (erstat den eksisterende)
-- assets/naar-verden-taler-tilbage-deling.jpg (ny fil i assets)
-- LICENSE (opdateret afgrænsning af billedets brugsret)
+1. Pak zipfilen ud. Åbn mappen mem-kids-samlet.
+2. Åbn index.html for at se siden lokalt. PDF'er og oplevelser følger med.
+3. Tag en kopi af dit nuværende GitHub-repository.
+4. Upload indholdet af mem-kids-samlet til repositoryets rod, hvor index.html ligger.
+   Upload både filer og undermapper. Ikke zipfilen eller en ekstra rodmappe.
+5. Gem med Commit changes. Vent på GitHub Pages.
 
-Pakken indeholder kun opdateringen, ikke hele hjemmesiden.
-Hvis du har lavet nyere ændringer på hjemmesiden, skal de bevares.
-Upload ikke zipfilen eller en ekstra mem-kids.com-main-mappe til websiden.
+Nyt: voksne.html, bankeren.html, laering.html, lokal Science Sandbox,
+ungerummets tempoeksperiment, fælles navigation og opdaterede præsentationer.
+Bogens PDF'er og LinkedIn-linkkort er bevaret. CNAME er mem-kids.com.
 
-Når GitHub Pages er færdig:
-1. Åbn https://www.linkedin.com/post-inspector/
-2. Indsæt https://mem-kids.com/boern.html#bogen og vælg Inspect.
-3. Kontrollér at bogens titel og billede vises.
-4. Gem opslagsteksten. Fjern det gamle linkkort i kladden, og indsæt linket igen.
-5. Offentliggør først når det nye linkkort vises korrekt.
+Dette er en samlet pakke baseret på den seneste version i denne samtale.
+Eventuelle nyere ændringer, du selv har lavet, skal flettes med før upload.
 
-Delingsoplysningerne gælder hele boern.html. #bogen fører læseren ned til bogen.
-Hjemmesidens synlige indhold og bogens PDF er uændrede.
+Bankeren-præsentationen beskriver udviklingssporet. Farveformen og
+tempoeksperimentet er enkle lokale oplevelser, ikke Maxis beslutningskerne.
+AI-sporene er præsentationer og samtaleøvelser, ikke aktive støttetjenester.

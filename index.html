@@ -60,10 +60,10 @@ footer{text-align:center;padding:26px 6% 34px;font-size:15px;font-weight:600}
 @media(prefers-reduced-motion:reduce){.adult-door{transition:none}.door:hover,.door:focus-visible,.door.unge:hover{transform:none}}
 
 </style>
-<link rel="stylesheet" href="boeger.css">
+<link rel="stylesheet" href="boeger.css"><link rel="stylesheet" href="univers.css"><meta name="description" content="Historier, læring og sanselige oplevelser for børn og unge. Et relationelt grundlag for deltagelse, trivsel og tryg teknologi.">
 </head>
 <body>
-<div class="top"><header><a class="logo" href="#">M.E.M. <em>Kids</em></a></header>
+<div class="top"><header><a class="logo" href="index.html">M.E.M. <em>Kids</em></a><nav class="top-links" aria-label="Genveje"><a href="boern.html">Børn</a><a href="unge.html">Unge</a><a href="voksne.html">Voksne</a></nav></header>
 
 <section class="hero">
   <h1>Noget bevæger sig<br><span>mellem</span> <b>os</b></h1>
@@ -72,7 +72,7 @@ footer{text-align:center;padding:26px 6% 34px;font-size:15px;font-weight:600}
     <canvas id="c" aria-label="En tråd mellem to venner, som du kan trække i"></canvas>
     <div class="hint" id="hint">👆 Tag fat i tråden</div>
   </div>
-</section>
+</section><div class="shared-copy"><p>Her er plads til det, du undrer dig over. Det, du mærker. Og det, du har lyst til at prøve.</p><p>Du må begynde dér, hvor du er.</p></div>
 </div>
 
 <nav class="doors" aria-label="Vælg dit univers">
@@ -94,11 +94,11 @@ footer{text-align:center;padding:26px 6% 34px;font-size:15px;font-weight:600}
 
 
 <section class="adults-wrap" aria-label="Indgang for voksne og fagpersoner">
-  <a class="adult-door" href="#voksne" aria-expanded="false" aria-controls="voksne">
+  <button class="adult-door" type="button" aria-expanded="false" aria-controls="voksne">
     <div><h2>Til voksne og fagpersoner</h2><p>Hvordan skaber vi betingelser for læring, trivsel og sammenhæng i børn og unges liv?</p></div>
     <span class="adult-go">Se vores tilgang →</span>
-  </a>
-  <div class="adult-content" id="voksne" hidden>
+  </button>
+  <p class="home-adult-route"><a href="voksne.html">Læs hele tilgangen: læring, trivsel, offentlige systemer og AI →</a></p><div class="adult-content" id="voksne" hidden>
     <h2>Et relationelt blik på børn og unge</h2>
     <p>Børn og unge lever og udvikler sig gennem relationer, erfaringer og de rammer, de møder. Derfor undersøger vi sammenhængen mellem barnet, fællesskabet og de betingelser, voksne og institutioner skaber.</p>
     <h3>Læring: oplevelse før forklaring</h3>
