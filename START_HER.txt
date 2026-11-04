@@ -1,26 +1,20 @@
-M.E.M. KIDS – BOGEN ER MED I PAKKEN
+M.E.M. KIDS – LINKKORT TIL BOGEN
 
-1. Pak zipfilen ud på din computer.
-2. Åbn mappen mem-kids.com-main.
-3. Åbn dit eksisterende GitHub-repository for mem-kids.com.
-4. Vælg Add file → Upload files.
-5. Træk filerne OG mapperne inde i mem-kids.com-main ind i uploadfeltet.
-   Upload indholdet til repositoryets rod, hvor index.html allerede ligger.
-   Upload ikke selve zipfilen eller mem-kids.com-main som en ekstra undermappe.
-6. Gem med Commit changes, og vent på at GitHub Pages er færdig.
+Upload kun disse nye/ændrede filer til dit eksisterende GitHub-repository:
+- boern.html (erstat den eksisterende)
+- assets/naar-verden-taler-tilbage-deling.jpg (ny fil i assets)
+- LICENSE (opdateret afgrænsning af billedets brugsret)
 
-Tag gerne en kopi af den nuværende hjemmeside først.
-Behold mappernes navne og placering. CNAME er bevaret som mem-kids.com.
-Hvis du har ændret hjemmesiden efter den vedhæftede pakke, skal de ændringer
-bevares, når du lægger denne opdatering ind.
+Pakken indeholder kun opdateringen, ikke hele hjemmesiden.
+Hvis du har lavet nyere ændringer på hjemmesiden, skal de bevares.
+Upload ikke zipfilen eller en ekstra mem-kids.com-main-mappe til websiden.
 
-NYT
-- Forside: en lille invitation til at møde Alma og Bankeren.
-- Børnerum: bog under 9–12 år med Læs bogen og Hent PDF.
-- Læsevejledning til voksne ved bogen og i voksenindgangen.
-- Gratis deling til ikke-kommerciel brug er forklaret på siden og i filerne.
-- PDF'er i boeger/ og et let omslag i assets/.
-- Bog og omslag har særskilte vilkår; se boeger/BRUGSVILKAAR.txt.
+Når GitHub Pages er færdig:
+1. Åbn https://www.linkedin.com/post-inspector/
+2. Indsæt https://mem-kids.com/boern.html#bogen og vælg Inspect.
+3. Kontrollér at bogens titel og billede vises.
+4. Gem opslagsteksten. Fjern det gamle linkkort i kladden, og indsæt linket igen.
+5. Offentliggør først når det nye linkkort vises korrekt.
 
-Unge-rummets filer og de eksisterende øvelser er bevaret.
-Pakken er gjort klar til upload; den er ikke offentliggjort af assistenten.
+Delingsoplysningerne gælder hele boern.html. #bogen fører læseren ned til bogen.
+Hjemmesidens synlige indhold og bogens PDF er uændrede.
